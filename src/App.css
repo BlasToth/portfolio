@@ -34,6 +34,6 @@ nav ul li {
 .navbar-nav > li > a:hover {
   border-bottom: 0.1875rem solid var(--primary-orange);
 }
-.hamburger-menu {
+.hamburger-menu, .logo-code {
   color: var(--primary-white)
 }
