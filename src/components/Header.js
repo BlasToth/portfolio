@@ -7,10 +7,11 @@ function Header() {
             <h2>My name is Balázs Tóth (Blas) and I am a full-stack developer</h2>
             <Typed 
                 className="type-text"
-                strings={"Web Development", "Google Ads", "Dynamic websites"}
+                strings={["Web Development", "Google Ads", "Dynamic websites"]}
                 typeSpeed={40}
                 backSpeed={60}
                 loop
+                
             />
         </div>
     )
