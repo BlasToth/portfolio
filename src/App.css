@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: rgb(255, 179, 14);
+  --primary-dark: rgb(255, 255, 255, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* LINKS */
+#override-bs.body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(35, 223, 176);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a.nav-link {
+  /* font-weight: 600; */
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul li {
+  text-transform: uppercase;
+}
+.navbar-nav > li > a {
+  border-bottom: 0.1875rem solid var(--primary-dark);
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+#override-bs.navbar-nav > li > a {
+  color: var(--primary-white);
+}
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-bottom: 0.1875rem solid var(--primary-orange);
+}
+.navbar-nav > li > a:hover {
+  border-bottom: 0.1875rem solid var(--primary-orange);
+}
+.hamburger-menu, .logo-code {
+  color: var(--primary-white)
+}
+.main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-.App-link {
-  color: #61dafb;
+.main-info h1 {
+  font-size: 1.8rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-main {
+  border: 1px solid red;
+  font-size: .8rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  margin: 2rem;
 }
