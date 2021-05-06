@@ -38,7 +38,6 @@ nav ul li {
 .hamburger-menu, .logo-code {
   color: var(--primary-white)
 }
-
 .main-info {
   display: flex;
   position: absolute;
