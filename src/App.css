@@ -38,18 +38,23 @@ nav ul li {
 .hamburger-menu, .logo-code {
   color: var(--primary-white)
 }
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
 .main-info {
   display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    z-index: 2;
+    background: #c6e3fc;
+    border: 1px solid white;
+    padding: 0.9rem;
+    border-radius: 0.55rem;
 }
 .main-info h1 {
   font-size: 1.8rem;
@@ -61,4 +66,7 @@ nav ul li {
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   margin: 2rem;
+}
+.tsparticles-canvas-el {
+  position: absolute;
 }

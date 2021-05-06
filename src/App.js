@@ -6,8 +6,8 @@ import ParticleBackground from './components/ParticleBackground'
 function App() {
   return (
     <>
-    <ParticleBackground />
     <Navbar />
+    <ParticleBackground />
     <Header />
     </>
   );
